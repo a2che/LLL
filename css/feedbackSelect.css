@@ -1,0 +1,189 @@
+
+.wrapper-select__nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+.wrapper-select__nav select {
+    font-size: .937em;
+    color: #626469;
+    height: 30px;
+    border: 1px solid #626469;
+    margin-right: 16px;
+    padding: 0px 5px;
+
+}
+.wrapper-select__nav select option{
+    padding: 15px;
+}
+.wrapper-select__nav select option:first-child {
+    font-weight: bold;
+    color: #626469;
+    border-top: none;
+    width: 100%;
+}
+
+.select:first-child{
+ width: 220px;
+}
+.select:nth-child(2){
+ width: 220px;
+}
+.select:nth-child(3){
+ width: 150px;
+}
+.select:nth-child(4){
+ width: 161px;
+}
+
+
+
+
+
+.section__block {
+    margin-top: 66px;
+}
+.wrapper-training__blockMT{
+    margin-top: 22px !important;
+}
+.wrapper-training__block {
+    margin: 11px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-prof-block,.btn-exp-session,.btn-prof-coffee {
+    margin-top: 26px;
+}
+.training__block-null {
+
+    padding-top: 11px;
+    line-height: 24px;  
+    color: #9FA0A4;
+}
+.training__block-null.active {
+    display: block;
+}
+
+.btn__myTeam{
+    margin-bottom:  80px;
+}
+
+.select {
+    display: block;
+    position: relative;
+    height: 31px;
+
+}
+
+.new-selectFeed {
+    position: relative;
+    border: 1px solid #c4c4c4;
+    color: #626469;
+    padding: 5px 10px;
+    padding-right: 35px;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+    max-height: 31px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.select:selected
+.new-select.on,.new-select__list{
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.15);
+}
+.new-select__list {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border: 1px solid #c4c4c4;
+    border-top: none;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    background: #fff;
+    user-select: none;
+}
+
+.new-select__list.on {
+    display: block;
+    
+}
+
+.new-select__item span {
+    display: block;
+    padding: 10px 10px;
+   overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color:  #626469;
+
+}
+
+
+.new-select__item span:hover {
+    color: #12b223;
+}
+
+.new-selectFeed:after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: url('../img/Polygon11.png') no-repeat right center;
+    opacity: 0.6;
+
+    -webkit-transition: all .27s ease-in-out;
+        -o-transition: all .27s ease-in-out;
+            transition: all .27s ease-in-out;
+
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+.new-selectFeed.on:after {
+    -webkit-transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg);
+         -o-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper-select__navFeedback{
+    margin-top: 26px ;
+
+}
+
+.selectFeedback .new-select{
+    border: 1px solid #c4c4c4;
+}

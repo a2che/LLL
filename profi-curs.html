@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/zero_style.css?4">
+    <link rel="stylesheet" href="css/style.css?4">
+    <link rel="stylesheet" href="css/profi-curs.css?4">
+    <link rel="stylesheet" href="css/calendar.css?4">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="top-nav">
+        
+    </div>
+
+    <div class="mobile-nav">
+        <div class="gamburger">
+            <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60">
+                <path
+                    class="line top"
+                    d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                <path
+                    class="line middle"
+                    d="m 30,50 h 40" />
+                <path
+                    class="line bottom"
+                    d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+            </svg>
+        </div>
+    </div>
+    
+    <div class="wrapper-page">
+        <nav id="nav">
+            <a href="index.html">
+                <div class="nav-links ">
+                    <img src="img/arrow.svg" alt="">
+                    <p class="ru">Главная страница</p>
+                </div>
+            </a>
+            <a href="user_cabinet.html">
+                <div class="nav-links ">
+                    <img src="img/arrow.svg" alt="">
+                    <p class="ru">Учебный кабинет</p>
+                </div>
+            </a>
+            <a href="profi-curs.html">
+                <div class="nav-links active">
+                    <img src="img/arrow_green.svg" alt="">
+                    <p class="ru">Каталог курсов</p>
+                </div>
+            </a>
+            
+            <!-- <div class="nav-links__mini">
+                <a href="profi-curs.html">
+                    <p class="ru">Профессиональные<br>курсы</p>
+                    <p class="en">Professional training</p>
+                </a>
+                <a href="expert-sessuin.html">
+                    <p class="active ru">Экспертные сессии</p>
+                    <p class="en">Expert sessions</p>
+                </a>
+                <a href="expert-coffee.html">
+                    <p class="ru">Кофе с экспертом</p>
+                    <p class="en">Coffee with an expert</p>
+                </a>
+            </div> -->
+            <a href="sertificat.html">
+                <div class="nav-links">
+                <img src="img/arrow.svg" alt="">
+                <p class="ru">Сертификаты</p>
+                <p class="en">Certificates</p>
+                </div>
+            </a>
+            <a href="level.html">
+                <div class="nav-links">
+                <img src="img/arrow.svg" alt="">
+                <p class="ru">Награды и уровни</p>
+                <p class="en">Rewards and levels</p>
+                </div>
+            </a>
+            <a href="about.html">
+                <div class="nav-links">
+                <img src="img/arrow.svg" alt="">
+                <p class="ru">О платформе</p>
+                <p class="en">About the platform</p>
+                </div>
+            </a>
+            <a  href="smarteka.html">
+                <div class="nav-links">
+                <img src="img/arrow.svg" alt="">
+                <p>Smarteka</p>
+                </div>
+            </a>
+            <a href="feedback.html">
+                <div class="nav-links">
+                <img src="img/arrow.svg" alt="">
+                <p class="ru">Обратная связь</p>
+                <p class="en">Feedback</p>
+                </div>
+            </a>
+            <a href="subscription.html">
+                <div class="nav-links">
+                <img src="img/arrow.svg" alt="">
+                <p class="ru">Подписка</p>
+                <p class="en">subscription</p>
+                </div>
+            </a>
+        </nav>
+
+        <div class="page-contante">
+            <div class="wrapper-mini__nav">
+                <div class="mini__nav__block active">
+                    <a href="#" onclick="
+                        $(function(){
+                        $('#profi__courses__wrapper').css('display','block');
+                        $('#expert__sessions__wrapper').css('display','none');
+                        $('#expert__coffe__wrapper').css('display','none');
+                        });
+                    ">
+
+                        <p class="ru">Профессиональные курсы</p>
+                        <p class="en">Professional training</p>
+                    </a>
+                </div>
+                <div class="mini__nav__block">
+                <a href="#" onclick="
+                        $(function(){
+                        $('#profi__courses__wrapper').css('display','none');
+                        $('#expert__sessions__wrapper').css('display','block');
+                        $('#expert__coffe__wrapper').css('display','none');
+                        });
+                    ">
+                    <p class="ru">Экспертные сессии</p>
+                    <p class="en">Expert sessions</p>
+                
+                </a>
+                </div>
+                <div class="mini__nav__block">
+                <a href="#" onclick="
+                        $(function(){
+                        $('#profi__courses__wrapper').css('display','none');
+                        $('#expert__sessions__wrapper').css('display','none');
+                        $('#expert__coffe__wrapper').css('display','block');
+                        });
+                    ">
+                    <p class="ru">Кофе с экспертом</p>
+                    <p class="en">Coffee with an expert</p>
+                </a>
+                </div>
+            </div>
+        <section id="profi__courses__wrapper">
+            
+            <h2 class="ru">Профессиональные курсы</h2>
+            <h2 class="en">Professional training</h2>
+            <p class="ru">Теория и практика онлайн</p>
+            <p class="en">Theory and practice online</p>
+            <div class="wrapper-proffesional-course__block">
+                <div class="proffesional-course__block">
+                    <a href="midle-volt.html">
+                        <img src="img/Group 96.png" alt="">
+                        <div class="proffesional-course__name">
+                            <p class="proffesional-course__title ru" >Среднее напряжение</p>
+                            <p class="proffesional-course__title en">Medium voltage</p>
+                            <p class="proffesional-course__subtitle ru">3 курса | бесплатно</p>
+                            <p class="proffesional-course__subtitle en">3 courses | free</p>
+                        </div>
+                        <div class="proffesional-course__bottom"></div>   
+                    </a>
+                </div>
+                <div class="proffesional-course__block">
+                    <a href="low-volt.html">
+                        <img src="img/Group85.png" alt="">
+                        <div class="proffesional-course__name">
+                            <p class="proffesional-course__title ru">Низкое напряжение</p>
+                            <p class="proffesional-course__title en">Low voltage</p>
+                            <p class="proffesional-course__subtitle ru">19 курсов | бесплатно</p>
+                            <p class="proffesional-course__subtitle en">19 courses | free</p>
+                        </div>
+                        <div class="proffesional-course__bottom"></div> 
+                    </a>
+                </div>
+                <div class="proffesional-course__block">
+                    <a href="atsup.html">
+                        <img src="img/Group 98.png" alt="">
+                        <div class="proffesional-course__name">
+                            <p class="proffesional-course__title ru">АСУТП</p>
+                            <p class="proffesional-course__title en">Industrial Automation</p>
+                            <p class="proffesional-course__subtitle ru">2 курса | бесплатно</p>
+                            <p class="proffesional-course__subtitle en">2 courses | free</p>
+                        </div>
+                        <div class="proffesional-course__bottom"></div>
+                    </a>
+                </div>
+                <div class="proffesional-course__block">
+                    <a href="avto-town.html">
+                        <img src="img/Group 99.png" alt="">
+                        <div class="proffesional-course__name">
+                            <p class="proffesional-course__title ru">Автоматизация зданий</p>
+                            <p class="proffesional-course__title en">Building automation</p>
+                            <p class="proffesional-course__subtitle ru">7 курсов | бесплатно</p>
+                            <p class="proffesional-course__subtitle en">7 courses | free</p>
+                        </div>
+                        <div class="proffesional-course__bottom"></div>
+                    </a>
+                </div>
+                <div class="proffesional-course__block">
+                    <a href="info-model.html">
+                        <img src="img/Group 100.png" alt="">
+                        <div class="proffesional-course__name">
+                            <p class="proffesional-course__title ru">Информационное моделирование</p>
+                            <p class="proffesional-course__title en">7 courses | free</p>
+                            <p class="proffesional-course__subtitle ru">1 курс | бесплатно</p>
+                            <p class="proffesional-course__subtitle en">1 course | free</p>
+                        </div>
+                        <div class="proffesional-course__bottom"></div>
+                    </a>
+                </div>
+                <div class="proffesional-course__block">
+                    <a href="raschet-proect.html">
+                        <img src="img/Group 101.png" alt="">
+                        <div class="proffesional-course__name">
+                            <p class="proffesional-course__title ru">Расчеты и проектирование</p>
+                            <p class="proffesional-course__title en">Design and evaluation</p>
+                            <p class="proffesional-course__subtitle ru">2 курса | бесплатно</p>
+                            <p class="proffesional-course__subtitle en">2 courses | free</p>
+                        </div>
+                        <div class="proffesional-course__bottom"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="expert__sessions__wrapper" style="display: none;">
+            
+            <h2 class="ru">Экспертные сессии</h2>
+            <h2 class="en">Expert sessions</h2>
+            <p class="ru">Вебинары онлайн и в записи</p>
+            <p class="en">Online and recorded webinars</p>
+
+            <div class="wrapper__calendar">
+                <div class="calendar__name">
+                    <div class="calendar__name__month">
+                        <p>Сентябрь</p>
+                    </div>
+                    <div class="calendar__name__title">
+                        <p class="ru">Запишитесь на предстоящую онлайн-сессию</p>
+                        <p class="en">Sign up for an upcoming online session</p>
+                    </div>
+                </div>
+                <div class="calendar__Line calendar__Line1">
+                    <div class="calendar__row calendar__row1">
+                        <p><span>29</span></p>
+                    </div>
+                    <div class="calendar__row calendar__row2">
+                        <p><span>30</span></p>
+                    </div>
+                    <div class="calendar__row calendar__row3">
+                        <p><span>31</span></p>
+                    </div>
+                    <div class="calendar__row calendar__row4">
+                        <p>1</p>
+                    </div>
+                    <div class="calendar__row calendar__row5">
+                        <p>2</p>
+                    </div>
+                    <div class="calendar__row calendar__row6">
+                        <p>3</p>
+                    </div>
+                    <div class="calendar__row calendar__row7">
+                        <p>4</p>
+                        <a class="show-modal" href="expert-sessuin.html"><div class="calendar__block__disabled">
+                            <p class="ru">смотреть<br>запись</p>
+                            <p class="en">Watch the<br>recording</p>
+                        </div></a>
+                        <div class="modal-vebinar__banner">
+                            <h6 class="ru">ONLINE-ВебинаР</h6>
+                            <h6 class="en">ONLINE-VEBINAR</h6>
+                            <h5 class="ru">Новое решение - шкафы управления тепловыми пунктами SmartHEAT</h5>
+                            <h5 class="en">New solution-heat point control cabinets SmartHEAT</h5>
+                            <div class="wrapper-vebinar__date">
+                                <div class="vebinar__date__block">
+                                    <img src="img/calendar.svg" alt="">
+                                    <p>04.09.2021</p>
+                                </div>
+                                <div class="vebinar__date__block">
+                                    <img src="img/clock_min.svg" alt="">
+                                    <p>10:00–11:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar__Line calendar__Line2">
+                    <div class="calendar__row calendar__row1">
+                        <p>5</p>
+                    </div>
+                    <div class="calendar__row calendar__row2">
+                        <p>6</p>
+                    </div>
+                    <div class="calendar__row calendar__row3">
+                        <p>7</p>
+                    </div>
+                    <div class="calendar__row calendar__row4">
+                        <p>8</p>
+                    </div>
+                    <div class="calendar__row calendar__row5">
+                        <p>9</p>
+                    </div>
+                    <div class="calendar__row calendar__row6">
+                        <p>10</p>
+                    </div>
+                    <div class="calendar__row calendar__row7">
+                        <p>11</p>
+                    </div>
+                </div>
+                <div class="calendar__Line calendar__Line3">
+                    <div class="calendar__row calendar__row1">
+                        <p>12</p>
+                    </div>
+                    <div class="calendar__row calendar__row2">
+                        <p>13</p>
+                    </div>
+                    <div class="calendar__row calendar__row3">
+                        <p>14</p>
+                        <a class="show-modal" href="expert-sessuin.html"><div class="calendar__block__disabled">
+                            <p class="ru">смотреть<br>запись</p>
+                            <p class="en">Watch the<br>recording</p>
+                        </div></a>
+                        <div class="modal-vebinar__banner">
+                            <h6 class="ru">ONLINE-ВебинаР</h6>
+                            <h6 class="en">ONLINE-VEBINAR</h6>
+                            <h5 class="ru">EcoStruxure Power SCADA Operation 2020. Вводный теоретический курс</h5>
+                            <h5 class="en">EcoStruxure Power SCADA Operation 2020. Introductory theoretical course</h5>
+                            <div class="wrapper-vebinar__date">
+                                <div class="vebinar__date__block">
+                                    <img src="img/calendar.svg" alt="">
+                                    <p>14.09.2021</p>
+                                </div>
+                                <div class="vebinar__date__block">
+                                    <img src="img/clock_min.svg" alt="">
+                                    <p>10:00–11:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calendar__row calendar__row4">
+                        <p>15</p>
+                        <a class="show-modal" href="expert-sessuin.html"><div class="calendar__block__disabled">
+                            <p class="ru">смотреть<br>запись</p>
+                            <p class="en">Watch the<br>recording</p>
+                        </div></a>
+                        <div class="modal-vebinar__banner">
+                            <h6 class="ru">ONLINE-ВебинаР</h6>
+                            <h6 class="en">ONLINE-VEBINAR</h6>
+                            <h5 class="ru">EcoStruxure Power SCADA Operation 2020. Вводный теоретический курс </h5>
+                            <h5 class="en">EcoStruxure Power SCADA Operation 2020. Introductory theoretical course</h5>
+                            <div class="wrapper-vebinar__date">
+                                <div class="vebinar__date__block">
+                                    <img src="img/calendar.svg" alt="">
+                                    <p>15.09.2021</p>
+                                </div>
+                                <div class="vebinar__date__block">
+                                    <img src="img/clock_min.svg" alt="">
+                                    <p>10:00–11:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calendar__row calendar__row5">
+                        <p>16</p>
+                    </div>
+                    <div class="calendar__row calendar__row6">
+                        <p>17</p>
+                    </div>
+                    <div class="calendar__row calendar__row7">
+                        <p>18</p>
+                    </div>
+                </div>
+                <div class="calendar__Line calendar__Line4">
+                    <div class="calendar__row calendar__row1">
+                        <p>19</p>
+                    </div>
+                    <div class="calendar__row calendar__row2 calendarToday">
+                        <p>20</p>
+                    </div>
+                    <div class="calendar__row calendar__row3">
+                        <p>21</p>
+                    </div>
+                    <div class="calendar__row calendar__row4">
+                        <p>22</p>
+                        <a class="show-modal" href="expert-sessuin.html"><div class="calendar__block__disabled">
+                            <p class="ru">смотреть<br>запись</p>
+                            <p class="en">Watch the<br>recording</p>
+                        </div></a>
+                        <div class="modal-vebinar__banner">
+                            <h6 class="ru">ONLINE-ВебинаР</h6>
+                            <h6 class="en">ONLINE-VEBINAR</h6>
+                            <h5 class="ru">Q&A по разработке разделов ЭС и СС в Revit</h5>
+                            <h5 class="en">Q&A on the development of sections ЭС и СС в Revit</h5>
+                            <div class="wrapper-vebinar__date">
+                                <div class="vebinar__date__block">
+                                    <img src="img/calendar.svg" alt="">
+                                    <p>22.09.2021</p>
+                                </div>
+                                <div class="vebinar__date__block">
+                                    <img src="img/clock_min.svg" alt="">
+                                    <p>10:00–11:00</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="calendar__row calendar__row5">
+                        <p>23</p>
+                    </div>
+                    <div class="calendar__row calendar__row6">
+                        <p>24</p>
+                    </div>
+                    <div class="calendar__row calendar__row7">
+                        <p>25</p>
+                    </div>
+                </div>
+                <div class="calendar__Line calendar__Line5">
+                    <div class="calendar__row calendar__row1">
+                        <p>26</p>
+                    </div>
+                    <div class="calendar__row calendar__row2">
+                        <p>27</p>
+                    </div>
+                    <div class="calendar__row calendar__row3">
+                        <p>28</p>
+                    </div>
+                    <div class="calendar__row calendar__row4">
+                        <p>29</p>
+                    </div>
+                    <div class="calendar__row calendar__row5">
+                        <p>30</p>
+                        <a class="show-modal" href="vebinar.html"><div class="calendar__block__active">
+                            <p class="ru">Вебинар</p>
+                            <p class="en">vebinar</p>
+                        </div></a>
+                        <div class="modal-vebinar__banner">
+                            <h6 class="ru">ONLINE-ВебинаР</h6>
+                            <h6 class="en">ONLINE-VEBINAR</h6>
+                            <h5 class="ru">Проектирование системы безопасности на Security Expert</h5>
+                            <h5 class="en">Designing a security system on the Security Expert</h5>
+                            <div class="wrapper-vebinar__date">
+                                <div class="vebinar__date__block">
+                                    <img src="img/calendar.svg" alt="">
+                                    <p>30.09.2021</p>
+                                </div>
+                                <div class="vebinar__date__block">
+                                    <img src="img/clock_min.svg" alt="">
+                                    <p>10:00–11:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calendar__row calendar__row6">
+                        <p><span>1</span></p>
+                    </div>
+                    <div class="calendar__row calendar__row7">
+                        <p><span>2</span></p>
+                    </div>
+                </div>
+                <div class="calendar__Line calendar__Line6">
+                    <div class="calendar__row calendar__row1">
+                        <p><span>3</span></p>
+                    </div>
+                    <div class="calendar__row calendar__row2">
+                        <p><span>4</span></p>
+                    </div>
+                    <div class="calendar__row calendar__row3">
+                        <p><span>5</span></p>
+                    </div>
+                    <div class="calendar__row calendar__row4">
+                        <p><span>6</span></p>
+                    </div>
+                    <div class="calendar__row calendar__row5">
+                        <p><span>7</span></p>
+                    </div>
+                    <div class="calendar__row calendar__row6">
+                        <p><span>8</span></p>
+                    </div>
+                    <div class="calendar__row calendar__row7">
+                        <p><span>9</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper-new-team">
+                <article class="ru">Предложите тему или станьте экспертом</article>
+                <article class="en">Suggest a topic or become an expert</article>
+                <p class="ru">Каждый слушатель курсов может предложить свою тему для экспертной сессии или сам —<br>стать экспертом!</p>
+                <p class="en">Each student may offer their own topic for an expert session or become an expert themselves!</p>
+                <a href="feedback.html"><div class="btn btn-new-team">
+                    <p class="ru"><b>Подать заявку</b></p>
+                    <p class="en">Apply</p>
+                </div></a>
+            </div>
+
+            <h4 class="arhiv-expert ru">Архив экспертных сессий</h4>
+            <h4 class="arhiv-expert en">Архив экспертных сессий</h4>
+
+
+            <div class="wrapper-proffesional-course__block">
+                <div class="proffesional-course__block">
+                <a href="midle-volt_s.html">
+                        <img src="img/Group 102.png" alt="">
+                        <div class="proffesional-course__name">
+                            <p class="proffesional-course__title ru">Среднее напряжение</p>
+                            <p class="proffesional-course__title en">Medium voltage</p>
+                            <p class="proffesional-course__subtitle ru">1 сессия | бесплатно</p>
+                            <p class="proffesional-course__subtitle en">1 session | free</p>
+                        </div>
+                        <div class="proffesional-course__bottom"></div>
+                    </a>
+                </div>
+                
+                <div class="proffesional-course__block">
+                <a href="low-volt_s.html">
+                        <img src="img/Group 103.png" alt="">
+                        <div class="proffesional-course__name">
+                            <p class="proffesional-course__title ru">Низкое напряжение</p>
+                            <p class="proffesional-course__title en">Low voltage</p>
+                            <p class="proffesional-course__subtitle ru">3 сессии | бесплатно</p>
+                            <p class="proffesional-course__subtitle en">3 sessions | free</p>
+                        </div>
+                        <div class="proffesional-course__bottom"></div>
+                    </a>
+                </div>
+                <div class="proffesional-course__block">
+                <a href="avto-town_s.html">
+                        <img src="img/Group 104.png" alt="">
+                        <div class="proffesional-course__name">
+                            <p class="proffesional-course__title ru">Автоматизация зданий и СС</p>
+                            <p class="proffesional-course__title en">Building automation and CS</p>
+                            <p class="proffesional-course__subtitle ru">1 сессия | бесплатно</p>
+                            <p class="proffesional-course__subtitle en">1 session | free</p>
+                        </div>
+                        <div class="proffesional-course__bottom"></div>
+                    </a>
+                </div>
+                <div class="proffesional-course__block">
+                <a href="schneider-electrik.html">
+                        <img src="img/Group 105.png" alt="">
+                        <div class="proffesional-course__name">
+                            <p class="proffesional-course__title ru">Особенности решений для сегментов</p>
+                            <p class="proffesional-course__title en">Solutions features for segments</p>
+                            <p class="proffesional-course__subtitle ru">4 сессии | бесплатно</p>
+                            <p class="proffesional-course__subtitle en">4 sessions | free</p>
+                        </div>
+                        <div class="proffesional-course__bottom"></div>
+                    </a>
+                </div>
+                <div class="proffesional-course__block">
+                <a href="info-model_s.html">
+                        <img src="img/Group 106.png" alt="">
+                        <div class="proffesional-course__name">
+                            <p class="proffesional-course__title ru">Информационное моделирование</p>
+                            <p class="proffesional-course__title en">Information modeling</p>
+                            <p class="proffesional-course__subtitle ru">3 сессии | бесплатно</p>
+                            <p class="proffesional-course__subtitle en">3 sessions | free</p>
+                        </div>
+                        <div class="proffesional-course__bottom"></div>
+                    </a>
+                </div>
+                <div class="proffesional-course__block">
+                <a href="prom-avto.html">
+                        <img src="img/Group 107.png" alt="">
+                        <div class="proffesional-course__name">
+                            <p class="proffesional-course__title ru">Промышленная автоматизация</p>
+                            <p class="proffesional-course__title en">Industrial automation</p>
+                            <p class="proffesional-course__subtitle ru">2 сессии | бесплатно</p>
+                            <p class="proffesional-course__subtitle en">2 sessions | free</p>
+                        </div>
+                        <div class="proffesional-course__bottom"></div>
+                    </a>
+                </div>
+                <div class="proffesional-course__block">
+                <a href="rasshet_s.html">
+                        <img src="img/Group 108.png" alt="">
+                        <div class="proffesional-course__name">
+                            <p class="proffesional-course__title ru">ПО для расчетов и проектирования</p>
+                            <p class="proffesional-course__title en">Software for calculation and design</p>
+                            <p class="proffesional-course__subtitle ru">1 сессия | бесплатно</p>
+                            <p class="proffesional-course__subtitle en">1 session | free</p>
+                        </div>
+                        <div class="proffesional-course__bottom"></div>
+                    </a>
+                </div>
+                <div class="proffesional-course__block">
+                <a href="about_s.html">
+                        <img src="img/Group 109.png" alt="">
+                        <div class="proffesional-course__name">
+                            <p class="proffesional-course__title ru">О программе Life-Long Learning</p>
+                            <p class="proffesional-course__title en">About the Life-Long Learning program</p>
+                            <p class="proffesional-course__subtitle ru">1 сессия | бесплатно</p>
+                            <p class="proffesional-course__subtitle en">1 session | free</p>
+                        </div>
+                        <div class="proffesional-course__bottom"></div>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+        <section id="expert__coffe__wrapper" style="display: none;">
+            <h2 class="ru">Кофе с экспертом</h2>
+            <h2 class="en">Coffee with an expert</h2>
+            <p class="ru">10-минутные видеоподкасты, где эксперты делятся своим опытом и лайфхаками в проектировании</p>
+            <p class="en">10-minute video podcasts, where experts share their experience and life hacks in designing</p>
+
+            <div class="wrapper-proffesional-course__block">
+
+                <div class="training__block training__block-grey">
+                    <a href="lesson.html">
+                        <img src="img/testImg3.png" alt="">
+                        <div class="wrapper-info-training__block wrapper-info-training__blockMinHNone">
+                            <div class="training__block__name">
+                                <p class="ru">Беседа <br>с Юрием Жуковским</p>
+                                
+                                <p class="en">Interview with Anton Samokhov</p>
+                            </div>
+                        </div>
+                        <div class="block-label__red">
+                            <img src="img/clock.svg" alt="">
+                            <p>01/04/21</p>
+                        </div>
+                        <div class="block-label__yellow">
+                            <p>зарегистрирован</p>
+                        </div>
+                        <div class="block-label__blue">
+                            <p>назначен</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="training__block">
+                    <a href="lesson.html">
+                        <img src="img/12647257245.png" alt="">
+                        <div class="wrapper-info-training__block wrapper-info-training__blockMinHNone">
+                            <div class="training__block__name">
+                                <p class="ru">Беседа <br>с Антоном Самоховым</p>
+                                <p class="en">Interview with Yuri Zhukovsky</p>
+                            </div> 
+                        </div>
+                        <div class="block-label__red">
+                            <img src="img/clock.svg" alt="">
+                            <p>01/04/21</p>
+                        </div>
+                        <div class="block-label__yellow">
+                            <p>зарегистрирован</p>
+                        </div>
+                        <div class="block-label__blue">
+                            <p>назначен</p>
+                        </div>
+                    </a>
+                </div>
+                
+
+
+                <div class="training__block training__block-grey">
+                    <a href="lesson.html">
+                        <img src="img/42725725.png" alt="">
+                        <div class="wrapper-info-training__block wrapper-info-training__blockMinHNone">
+                            <div class="training__block__name">
+                                <p class="ru">Беседа <br>с Дмитрием Чубриком</p>  
+                                <p class="en">Interview with Dmitriy Chubric</p>
+                            </div>                        
+                        </div>
+                        <div class="block-label__red">
+                            <img src="img/clock.svg" alt="">
+                            <p>01/04/21</p>
+                        </div>
+                        <div class="block-label__yellow">
+                            <p>зарегистрирован</p>
+                        </div>
+                        <div class="block-label__blue">
+                            <p>назначен</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="training__block training__block-grey">
+                    <a href="lesson.html">
+                    <img src="img/473547347.png" alt="">                    
+                    <div class="wrapper-info-training__block wrapper-info-training__blockMinHNone">
+                        <div class="training__block__name">
+                            <p class="ru">Беседа <br>с Ильясом Жумадиловым</p>                          
+                            <p class="en">Interview with Iliyas Jumadilov</p>
+                        </div>
+                    </div>
+                    <div class="block-label__red">
+                        <img src="img/clock.svg" alt="">
+                        <p>01/04/21</p>
+                    </div>
+                    <div class="block-label__yellow">
+                        <p>зарегистрирован</p>
+                    </div>
+                    <div class="block-label__blue">
+                        <p>назначен</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class="side-bar">
+            <div class="laura-zero">
+                <iframe src="https://dsr.ispvds.com/app_4" width= '312px' height = '512px' frameborder="0"></iframe>
+            </div>
+            <div class="my-certificate">
+
+            </div>
+            <div class="recomendation">
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrapper-footer">
+            <div class="footer-links">
+                <a href="feedback.html"><p class="ru">Обратная связь</p><p class="en">Feedback</p></a>
+                <a href="#"><p class="ru">Политика конфиденциальности</p><p class="en">Privacy Policy </p></a>
+            </div>
+            <div class="footer-info">
+                <p class="ru">Департамент<br>Schneider Electric,<br>Москва, Россия</p>
+                <p class="en">© 2021, Schneider Electric</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="js/navAnim.js"></script>
+    <script  src="js/userHeader.js"></script>
+    <script src="js/recommendedCourses.js"></script>
+    <!-- <script src="js/sideSertificates.js"></script> -->
+    <script src="js/app.js"></script>
+
+  <script type="text/javascript">
+        
+
+       
+
+    </script> 
+</body>
+</html>

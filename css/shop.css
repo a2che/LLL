@@ -1,0 +1,107 @@
+.wrapper-item__goods > article {
+    margin-top: 10px;
+    font-size: 1.375em;
+    line-height: 30px;
+    color: #202020;
+}
+.wrapper-page__goods {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.page__goods__img {
+    min-width: 312px;
+}
+.page__goods__img img {
+    width: 100%;
+}
+.page__goods__text {
+    margin-right: 48px;
+
+}
+.page__goods__text > p {
+    line-height: 24px; 
+    color: #626469;
+}
+.page__goods__text article {
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 24px;
+    color: #9FA0A4;
+}
+.btn-bay {
+    margin-top: 35px;
+    width: max-content;
+    font-size: .875em;
+    padding: 8px 16px;
+    background: #C4C4C4;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-bay__label {
+    display: none;
+    width: max-content;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    color: #9FA0A4;
+    font-size: .875em;
+    padding: 10px 14px;
+    margin-left: 82px;
+    margin-top: -10px;
+}
+.btn-bay:hover ~ .btn-bay__label {
+    display: block;
+}
+.btn-bay__open {
+    margin-top: 35px;
+    display: none;
+}
+.wrapper-dostavka__page > p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.375em;
+    line-height: 30px;
+    color: #202020;
+}
+.wrraper_block__input {
+    margin-top: 24px;
+    display: flex;
+}
+.wrraper_block__input  p {
+    width: 120px;
+    line-height: 40px;
+    color: #626469;
+}
+.wrraper_block__input p strong {
+    color: #E74343;
+}
+.wrraper_block__input input[type="text"]  {
+    width: 432px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    border: 1px solid #C4C4C4;
+}
+textarea {
+    width: 432px;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #C4C4C4;
+}
+.wrraper_block__input article{
+    font-size: .75em;
+    color: #626469;
+}
+.wrraper_block__input article strong{
+    font-weight: normal;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.wrraper_block__input:last-child {
+    margin-top: -20px;
+}
+.btn_dostavka {
+    margin-top: 50px;
+    margin-left: 120px;
+}

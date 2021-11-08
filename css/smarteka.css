@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+.smar__wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.smar__card{
+	padding: 8px;
+	display: flex;
+	justify-content: space-between;
+	width: 376px;
+	align-items: center;
+	border: 1px solid #C4C4C4;
+box-sizing: border-box;
+min-height: 216px;
+/* Basic_shadow */
+
+box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+border-radius: 16px; #c4c4c4;
+margin-bottom: 24px;
+}
+.smar__text{
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 30px;
+color: #3DCD58;
+width: 100%;
+max-width: 220px;
+padding-left: 16px;
+}
+.smar__card>img{
+		max-width: 	160px;
+}
+
+.smar__title{
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-style: normal;
+font-weight: 500;
+font-size: 50px;
+line-height: 61px;
+text-align: center;
+
+color: #202020;
+
+}
+.smar__description{
+	font-style: normal;
+font-weight: 500;
+font-size: 20px;
+margin-top: 16px;
+
+text-align: center;
+margin-bottom: 63px;
+color: #202020;
+}
+.smar__catalog{
+	display: none;
+}
+.smar__catalog__item,.smar__catalog__title{
+	padding-bottom: 28px;
+	display: flex;
+}
+.smar__catalog__title>a>img,.smar__catalog__item>a>svg{
+	margin-right: 15px;
+	padding-top: 2px;
+	height: 18px;
+}
+.smar__catalog__title>a,.smar__catalog__item>a{
+	display: flex;
+}
+
+.smar__catalog__title{
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 32px;
+/* identical to box height, or 152% */
+
+
+/* Basic green */
+
+color: #3DCD58;
+
+}
+.smar__catalog__item{
+	margin-left: 30px;
+}
+.smar__catalog__item:hover svg{
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+

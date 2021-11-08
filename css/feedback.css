@@ -1,0 +1,43 @@
+.page-contante {
+    padding: 25px 40px;
+}
+.page-contante article {
+    font-size: 1.375em;
+    line-height: 30px;
+    color: #202020;
+}
+.page-contante > p {
+    margin-top: 16px;
+    line-height: 24px;
+    color: #202020;
+}
+.page-contante select,.page-contante input {
+    margin-top: 27px;
+    width: 432px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 16px;
+    font-size: 1em;
+    color: #626469;
+    border: 1px solid #C4C4C4;
+}
+.page-contante textarea {
+    margin-top: 25px;
+    padding: 6px 16px;
+    width: 432px;
+    height: 184px;
+    border: 1px solid #C4C4C4;
+    resize: none;
+    font-size: 1em;
+}
+.page-contante input::placeholder,.page-contante textarea::placeholder {
+    color: #9FA0A4;
+}
+.btn-feedback {
+    margin-top: 40px;
+}
+
+
+.demo {
+    height: 200px;
+}

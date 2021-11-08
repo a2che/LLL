@@ -1,0 +1,76 @@
+.user__plan__wrap{
+	display: flex;
+	margin-bottom: 57px;
+	margin-top: 26px;
+}
+.user__plan__img{
+	width: 248px;
+	height: 152px;
+	margin-right: 31px;
+}
+
+.user__plan__name h3.ru{
+font-family: Noto Sans, sans-reg;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 30px;
+/* identical to box height */
+margin-bottom: 8px;
+
+/* Dark grey */
+
+color: #626469;
+}
+.user__plan__name article.ru{
+	font-family: Noto Sans, sans-reg;
+font-style: normal;
+font-weight: normal;
+font-size: 9px;
+line-height: 11px;
+margin-bottom: 43px;
+/* identical to box height, or 122% */
+
+text-transform: uppercase;
+
+/* Dark grey */
+
+color: #626469;
+}
+.user__plan__text{
+
+	font-family: Noto Sans, sans-reg;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+
+/* Dark grey */
+
+color: #626469;
+}
+
+
+.btn-mb-46{
+	margin-bottom: 46px;
+	margin-top: 64px;
+}
+
+
+
+
+.side-bar__before__reg__text{
+	font-family: Noto Sans, sans-reg;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+
+/* Grey */
+
+color: #9FA0A4;
+}

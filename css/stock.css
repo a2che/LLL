@@ -1,0 +1,28 @@
+.stock__main__title{
+	font-family: sans-reg;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 68px;
+	color: #3DCD58;
+	margin-bottom: 	41px;
+	width: 	100%;
+	max-width: 602px;
+}
+
+
+.stockMainImage{
+	width: 	100%;
+	margin-bottom: 	66px;
+}
+
+.stockText{
+	padding-top: 	19px;
+	padding-bottom: 	42px;
+	font-family: sans-reg;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #626469;
+}

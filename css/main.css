@@ -1,0 +1,141 @@
+/*****   page-contante     ******/
+
+h1 {
+    font-weight: normal;
+    font-size: 3.1em;
+    line-height: 68px;
+    color: #202020;
+}
+.page-contante > p {
+    margin-top: 19px;
+    font-size: 1.37em;
+    line-height: 30px;
+    color: #202020;
+}
+
+.btn-learning {
+    margin-top: 27px;
+}
+.continue-training {
+    margin-top: 70px;
+}
+.wrapper-continue-training__block {
+    margin: 11px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn-cabinet {
+    margin-top: 32px;
+}
+
+.proffesional-course {
+    margin-top: 70px;
+}
+.proffesional-course > p {
+    margin-top: 10px;
+    line-height: 24px;
+    color: #626469;
+}
+.wrapper-proffesional-course__block {
+    margin: 15px 0px 0px -9px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wrapper-proffesional-course__block a{
+    margin: 10px 9px;
+    transition: 0.2s;
+}
+/*.wrapper-proffesional-course__block a:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+}*/
+.proffesional-course__block {
+    transition: 0.2s;
+    width: 384px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.proffesional-course__block img {
+    max-width: 50%;
+    width: 183px;
+    height: 100%;
+}
+.proffesional-course__name {
+    width: 50%;
+    padding: 6px 16px;
+}
+
+.proffesional-course__title {
+    color: #202020;
+    line-height: 24px;
+    min-height: 90px;
+}
+.proffesional-course__subtitle  {
+    font-size: .562em;
+    line-height: 11px;
+    text-transform: uppercase;
+    color: #626469;
+}
+.proffesional-course__bottom {
+    width: 4.2%;
+    height: 100%;
+    background-color: #3DCD58;
+
+}
+.btn-proffesional-course {
+    margin-top: 40px;
+}
+
+.expert-session {
+    margin-top: 90px;
+}
+
+.last-video {
+    margin-top: 25px;
+}
+.last-video > p {
+    font-size: 1.375em;
+    line-height: 30px;
+    color: #626469;
+}
+.wrapper-last-video {
+    margin: 25px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+    grid-gap: 16px;
+}
+.btn-last-video {
+    margin-top: 40px;
+}
+
+.coffee-expert {
+    margin-top: 75px;
+}
+.coffee-expert > p {
+    margin-top: 10px;
+    line-height: 24px;
+    color: #626469;
+}
+.wrapper-coffee-expert {
+    margin: 25px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+    grid-gap: 16px;
+}
+.btn-coffee-expert {
+    margin-top: 40px;
+}
+
+@media (max-width: 830px) {
+    .calendar__name__title {
+        font-size: .46em;
+    }
+}

@@ -1,0 +1,205 @@
+.second__stage__logo{
+	margin: 	27px 22px;
+	flex-grow: 0;
+	width: 	212px;
+	height: 	67px;
+}
+
+
+
+h3.form__title{
+	font-family: sans-reg, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 30px;
+color: #202020;
+
+}
+
+.second__stage__form{
+	flex-grow: 1;
+	display: flex;	
+	flex-direction: column;
+	max-width: 	430px;
+	width: 	100%;
+	margin: 0 auto;
+}
+
+footer{
+	flex-grow: 0;
+	height: 	80px;
+	display: flex;	
+	justify-content: space-between;	
+	align-items: center;
+	padding: 	19px 32px;
+
+
+
+
+
+
+
+
+}
+
+.politic,.copyright,.feedback{
+	font-family: sans-reg, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+
+
+color: #FFFFFF;
+}
+.feedback{
+	margin-bottom: 	8px;
+}
+.copyright{
+	text-align: right;
+}
+.login__label__gray{
+	font-family: sans-reg, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Grey */
+
+color: #9FA0A4 !important	;
+}
+
+.login__input__second__stage{
+	  position: relative;
+  display: inline-block;
+}
+
+.login__input__second__stage:after {
+  content: url("../img/arrDownSecondStage.png");
+  padding-left: 14px;
+  font-size: 12px;
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  z-index: 1;
+  text-align: center;
+  width: 10%;
+  height: 100%;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+select {
+  padding-right: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.info__wrapper{
+	margin-top: 	32px;
+}
+.info:first-child{
+	margin-left: 	30px;
+}
+.info{
+		margin-left: 	17px;
+	font-family: Noto Sans, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+margin-bottom: 	27px;
+color: #626469;
+}
+
+
+.flex{
+	display: flex;	
+	align-items: flex-start;
+	justify-content: space-between;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.wrappAll{
+	display: flex;	
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox+label {
+
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #9FA0A4;
+  	cursor: 	pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+
+.custom-checkbox:checked+label::before {
+
+  background-image: url("../img/okCheck.png");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

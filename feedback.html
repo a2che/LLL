@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/zero_style.css?4">
+    <link rel="stylesheet" href="css/style.css?4">
+    <link rel="stylesheet" href="css/feedback.css?4">
+
+    <link rel="stylesheet" href="css/user_cabinet.css?4">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Обратная связь</title>
+</head>
+<body style="display: flex; flex-direction: column;">
+    
+    <div class="top-nav">
+        
+    </div>
+
+    <div class="mobile-nav">
+        <div class="gamburger">
+            <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60">
+                <path
+                    class="line top"
+                    d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                <path
+                    class="line middle"
+                    d="m 30,50 h 40" />
+                <path
+                    class="line bottom"
+                    d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+            </svg>
+        </div>
+    </div>
+    
+    <div class="wrapper-page">
+        <nav id="nav">
+            <a href="index.html">
+                <div class="nav-links ">
+                    <img src="img/arrow.svg" alt="">
+                    <p class="ru">Главная страница</p>
+                </div>
+            </a>
+            <a href="user_cabinet.html">
+                <div class="nav-links ">
+                    <img src="img/arrow.svg" alt="">
+                    
+                    <p class="ru">Учебный кабинет</p>
+                </div>
+            </a>
+            <a href="profi-curs.html">
+                <div class="nav-links">
+                    <img src="img/arrow.svg" alt="">
+                    <p class="ru">Каталог курсов</p>
+                </div>
+            </a>
+            
+            <!-- <div class="nav-links__mini">
+                <a href="profi-curs.html">
+                    <p class="ru">Профессиональные<br>курсы</p>
+                    <p class="en">Professional training</p>
+                </a>
+                <a href="expert-sessuin.html">
+                    <p class="active ru">Экспертные сессии</p>
+                    <p class="en">Expert sessions</p>
+                </a>
+                <a href="expert-coffee.html">
+                    <p class="ru">Кофе с экспертом</p>
+                    <p class="en">Coffee with an expert</p>
+                </a>
+            </div> -->
+            <a href="sertificat.html">
+                <div class="nav-links">
+                <img src="img/arrow.svg" alt="">
+                <p class="ru">Сертификаты</p>
+                <p class="en">Certificates</p>
+                </div>
+            </a>
+            <a href="level.html">
+                <div class="nav-links ">
+                <img src="img/arrow.svg" alt="">
+                <p class="ru">Награды и уровни</p>
+                <p class="en">Rewards and levels</p>
+                </div>
+            </a>
+            <a href="about.html">
+                <div class="nav-links ">
+                <img src="img/arrow.svg" alt="">
+                
+                <p class="ru">О платформе</p>
+                <p class="en">About the platform</p>
+                </div>
+            </a>
+            <a  href="smarteka.html">
+                <div class="nav-links">
+                <img src="img/arrow.svg" alt="">
+                <p>Smarteka</p>
+                </div>
+            </a>
+            <a href="feedback.html">
+                <div class="nav-links active">
+                <img src="img/arrow_green.svg" alt="">
+                <p class="ru">Обратная связь</p>
+                <p class="en">Feedback</p>
+                </div>
+            </a>
+            <a href="subscription.html">
+                <div class="nav-links">
+                <img src="img/arrow.svg" alt="">
+                <p class="ru">Подписка</p>
+                <p class="en">subscription</p>
+                </div>
+            </a>
+        </nav>
+        <div class="page-contante">
+            <article class="ru">Обратная связь</article>
+            <article class="en">Feedback</article>
+            <p class="ru">Задайте вопрос или внесите предложение.<br>Ответ придёт в течение суток на электронную почту, указанную при регистрации.</p>
+            <p class="en">Ask a question or make a suggestion.<br>The answer will be sent to the email address specified during registration within 24 hours.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+            <div class="wrapper-select__nav">
+                
+                <div class="select_container new_select1" style="width: 423px;margin-top: 26px; ">
+                    <div class="new_select " name="language" style="border: 1px solid #C4C4C4 !important;">
+                        <input type="hidden" name="selected" value="">
+                        <p class="title_select">Выберите категорию</p>
+                        <div class="body_select">
+                            
+                            <p >Технический вопрос</p>
+                    <!-- <p class="en" value="">Technical question</p> -->
+                    <p >Предложить тему экспертной сессии</p>
+                    <!-- <p class="en" value="">Suggest a subject for the expert session</p> -->
+                    <p >Стать экспертом</p>
+                    <!-- <p class="en" value="">Become an expert</p> -->
+                    <p >Подключить компанию</p>
+                    <!-- <p class="en" value="">Connect a company</p> -->
+                    <p >Другое</p>
+                        </div>
+                        <!-- <p class="en" value="7">features of Schneider Elecrtic solutions</p> -->
+                    </div>
+                </div>
+                
+            </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <textarea name="" id="" placeholder="Обращение" style="width: 423px;"></textarea>
+            <div class="btn btn-feedback">
+                <p class="ru">Отправить</p>
+                <p class="en">Send</p>
+            </div> 
+        </div>
+
+        <div class="side-bar">
+            <div class="laura-zero">
+                <iframe src="https://dsr.ispvds.com/app_4" width= '312px' height = '512px' frameborder="0"></iframe>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrapper-footer">
+            <div class="footer-links">
+                <a href="#"><p class="ru">Обратная связь</p><p class="en">Feedback</p></a>
+                <a href="#"><p class="ru">Политика конфиденциальности</p><p class="en">Privacy Policy </p></a>
+            </div>
+            <div class="footer-info">
+                <p class="ru">Департамент<br>Schneider Electric,<br>Москва, Россия</p>
+                <p class="en">© 2021, Schneider Electric</p>
+            </div>
+        </div>
+    </footer>
+
+    <script  src="js/userHeader.js"></script>
+    
+
+    <script src="js/select_new.js"></script>
+    <script src="js/navAnim.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/modulBlock.js"></script>
+    <script  src="js/userHeader.js"></script>
+<script src="js/recommendedCourses.js"></script>
+<script src="js/sideSertificates.js"></script>
+<script src="js/select_new.js"></script>
+<script src="js/app.js"></script>
+<script src="js/cabinet.js"></script>
+<script src="js/navAnim.js"></script>
+</body>
+</html>

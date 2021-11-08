@@ -1,0 +1,296 @@
+.nav-links__mini p.active {
+    color: #3DCD58;
+}
+.wrapper-mini__nav {
+    display: flex;
+}
+.mini__nav__block {
+    height: 36px;
+    line-height: 36px;
+    padding: 0px 16px;
+    border-bottom: 1px solid #626469;
+    color: #626469;
+    
+}
+.mini__nav__block.active {
+    color: #3DCD58;
+    border-bottom: 2px solid #3DCD58;
+    background-color: #F5F5F5;
+    font-weight: 700;
+}
+.mini__nav__block:hover {
+    color: #3DCD58;
+    border-bottom: 2px solid #3DCD58;
+}
+h2 {
+    margin-top: 36px;
+}
+.page-contante > p {
+    margin-top: 9px;
+    font-size: 1.375em;
+    line-height: 30px; 
+    color: #202020; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper-proffesional-course__block {
+    margin: 15px 0px 0px -9px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.proffesional-course__block {
+    margin: 10px 9px;
+    
+
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    transition: 0.2s;
+}
+.proffesional-course__block a{
+    display: flex;
+    width: 384px;
+    height: 120px;
+}
+.proffesional-course__block:hover{
+    transform: scale(1.02)
+}
+.proffesional-course__block img {
+    width: 50%;
+    height: 100%;
+}
+.proffesional-course__name {
+    width: 50%;
+    padding: 6px 16px;
+}
+.proffesional-course__title {
+    color: #202020;
+    line-height: 24px;
+    min-height: 90px;
+}
+.proffesional-course__subtitle  {
+    font-size: 9px;
+    line-height: 11px;
+    text-transform: uppercase;
+    color: #626469;
+}
+.proffesional-course__bottom {
+    width: 4.2%;
+    height: 100%;
+    background-color: #3DCD58;
+
+}
+.page-contante h3 {
+    font-weight: normal;
+    font-size: 2.25em;
+    line-height: 48px;
+    color: #202020;
+}
+.page-contante > article {
+    margin: 11px 0 50px;
+    font-size: 1em;
+    line-height: 24px;
+    color: #626469;
+}
+.wrapper__calendar {
+    margin-top: 75px;
+    margin-right:   8px;
+}
+.wrapper-new-team {
+    margin-top: 75px;
+}
+.wrapper-new-team article {
+    font-size: 2.25em;
+    line-height: 49px;
+    color: #202020;
+}
+.wrapper-new-team > p {
+    margin-top: 10px;
+    line-height: 24px;
+    color: #626469;
+}
+.btn-new-team {
+    margin-top: 30px;
+}
+.arhiv-expert {
+    font-weight: normal;
+    margin-top: 75px;
+    font-size: 36px;
+    line-height: 49px;
+    color: #202020;
+}
+.block-coffe {
+    margin: 35px 10px 0;
+    width: 248px;
+    height: 235px;
+    border-bottom: 1px solid #9FA0A4;
+    cursor: pointer;
+}
+.block-coffe p {
+    font-size: .937em;
+    line-height: 24px;
+    color: #626469;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.select:first-child{
+ width: 248px;
+}
+.select:nth-child(2){
+ width: 169px;
+}
+.btn-navrap-inner{
+    max-width: 144px;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+
+
+
+
+
+
+.wrapper-select__nav {
+    display: flex;
+    justify-content: flex-start;
+
+}
+.wrapper-select__nav select {
+    font-size: .937em;
+    color: #626469;
+    height: 30px;
+    border: 1px solid #626469;
+    margin-right: 16px;
+    padding: 0px 5px;
+
+}
+.wrapper-select__nav select option{
+    padding: 15px;
+}
+.wrapper-select__nav select option:first-child {
+    font-weight: bold;
+    color: #626469;
+    border-top: none;
+    width: 100%;
+}
+
+
+.select {
+    display: block;
+    position: relative;
+    height: 31px;
+    margin-right: 16px;
+
+}
+
+.new-select {
+    position: relative;
+    border: 1px solid #626469;
+    padding: 5px 10px;
+    padding-right: 35px;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+    max-height: 31px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.new-select.on,.new-select__list{
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.15);
+}
+.new-select__list {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    border: 1px solid #626469;
+    border-top: none;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    background: #fff;
+    user-select: none;
+}
+
+.new-select__list.on {
+    display: block;
+    
+}
+
+.new-select__item span {
+    display: block;
+    padding: 10px 10px;
+   overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+
+}
+
+
+.new-select__item span:hover {
+    color: #12b223;
+}
+
+.new-select:after {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 12px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: url('../img/arrdown.png') no-repeat right center;
+    opacity: 0.8;
+
+    -webkit-transition: all .27s ease-in-out;
+        -o-transition: all .27s ease-in-out;
+            transition: all .27s ease-in-out;
+
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+.new-select.on:after {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+

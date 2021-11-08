@@ -1,0 +1,114 @@
+
+
+.wrapper-select__nav {
+    display: flex;
+    margin-top: 26px;
+    justify-content: flex-start;
+
+}
+.wrapper-select__nav select {
+    font-size: .937em;
+    color: #626469;
+    height: 30px;
+    border: 1px solid #626469;
+    margin-right: 16px;
+    padding: 0px 5px;
+
+}
+.wrapper-select__nav select option{
+    padding: 15px;
+}
+.wrapper-select__nav select option:first-child {
+    font-weight: bold;
+    color: #626469;
+    border-top: none;
+    width: 100%;
+}
+
+
+.select {
+    display: block;
+    position: relative;
+    height: 31px;
+    margin-right: 16px;
+
+}
+
+.new-select {
+    position: relative;
+    border: 1px solid #626469;
+    padding: 5px 20px;
+    padding-right: 35px;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+    max-height: 31px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.new-select.on,.new-select__list{
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.15);
+}
+.new-select__list {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    border: 1px solid #626469;
+    border-top: none;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    background: #fff;
+    user-select: none;
+}
+
+.new-select__list.on {
+    display: block;
+    
+}
+
+.new-select__item span {
+    display: block;
+    padding: 10px 10px;
+   overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+
+}
+
+
+.new-select__item span:hover {
+    color: #12b223;
+}
+
+.new-select:after {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 12px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: url('../img/arrdown.png') no-repeat right center;
+    opacity: 0.6;
+
+    -webkit-transition: all .27s ease-in-out;
+        -o-transition: all .27s ease-in-out;
+            transition: all .27s ease-in-out;
+
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+.new-select.on:after {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+

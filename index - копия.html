@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/zero_style.css?4">
+    <link rel="stylesheet" href="css/style.css?4">
+    <link rel="stylesheet" href="css/main.css?4">
+    <link rel="stylesheet" href="css/calendar.css?4">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/ico">
+
+    <title>LIFE-LONG LEARNING</title>
+
+
+
+</head>
+<body>
+    <div class="top-nav">
+        
+    </div>
+    <div class="page-contante">
+         
+            <div class="continue-training">
+                <article class="ru">Продолжить обучение</article>
+                <article class="en">Continue training</article>
+                <div class="wrapper-continue-training__block">
+                   
+                </div>
+            </div>
+
+</body>
+
+
+
+<script type="text/javascript" src="js/userHeader.js"></script>
+
+<script type="text/javascript">
+
+    const products = [
+        {course_id: 1, name: 'Устройства управления электродвигателем от Schneider Electric', type:'Экспертная сессия',deadline: '12. 04. 2021', ready_percent: 20, image: 'img/pic1.png'},
+        {course_id: 2, name: 'Устройства управления электродвигателем от Schneider Electric', type:'Кофе с экспертом',deadline: '12. 04. 2021',  ready_percent: 60, image: 'img/pic2.png'},
+        {course_id: 3, name: 'Устройства управления электродвигателем от Schneider Electric', type:'Профессиональный курс',deadline: '12. 04. 2021', ready_percent: 100, image: 'img/pic3.png'},
+    ]
+    const renderProduct = (item, img) => `
+            <div class="training__block">
+                <img src="${item.image}" alt="">
+                <div class="training__block__line">
+                    <div style="width: ${item.ready_percent}%;"  id="line" class="training__block__line-el"></div>
+                </div>
+                <div class="wrapper-info-training__block">
+                    <div class="training__block__name">
+                        <p class="ru">${item.name}</p>
+                    </div>
+                    <div class="training__block__category">
+                        <p class="ru">${item.type}</p>
+                    </div>
+                </div>
+                <div class="block-label__red">
+                    <img src="img/clock.svg" alt="">
+                    <p>30/04/21</p>
+                </div>
+                <div class="block-label__yellow">
+                    <p>зарегистрирован</p>
+                </div>
+                <div class="block-label__blue">
+                    <p>назначен</p>
+                </div>
+            </div>
+           `
+    const renderProducts = (list) => {
+        document.querySelector('.wrapper-continue-training__block').insertAdjacentHTML('beforeend', list.map(item => renderProduct(item)).join(''))
+    }
+    renderProducts(products)
+
+
+
+    for(i in products){
+       if(products[i].ready_percent < 21){
+            document.getElementsByClassName('training__block__line-el')[i].style.backgroundColor = '#E84742'
+       } else if(products[i].ready_percent == 100 || products[i].ready_percent){
+            document.getElementsByClassName('training__block__line-el')[i].style.backgroundColor = '#FF9900'
+
+       } else{
+        document.getElementsByClassName('training__block__line-el')[i].style.backgroundColor ='#2ACE5A'
+       }
+    }
+</script>
+
+
+
+
+        <script src="js/navAnim.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

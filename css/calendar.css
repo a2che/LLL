@@ -1,0 +1,205 @@
+.calendar__name {
+    margin-top: 30px;
+    display: flex;
+    height: 24px;
+    text-transform: uppercase;
+}
+.calendar__name__month {
+    width: 112px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #3DCD58;
+    font-size: .75em;
+    color: #fff;
+}
+.calendar__name__title {
+    width: calc(100% - 112px);
+    background-color: #9FA0A4;
+    color: #fff;
+    line-height: 24px;
+    font-size: .75em;
+    padding-left: 15px;
+}
+.calendar__Line {
+    height: 40px;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+}
+.calendar__row {
+    position: relative;
+    width: calc(100% / 7);
+    height: 100%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.calendar__row:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+.calendar__row:not(:last-child) {
+    border-right: 1px solid #E5E5E5;
+}
+.calendar__Line6 {
+    border-bottom: 1px solid #C4C4C4;
+    margin-bottom: 11px;
+}
+.calendar__row {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 14px 8px 0 0;
+}
+.calendar__row p {
+    color: #626469;
+}
+.calendar__row p span {
+    color: #c4c4c4;
+}
+.calendar__block__disabled {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-left: 8px solid #C4C4C4;
+    background-color: rgba(0, 0, 0, .1);
+    color: #626469;
+    font-size: 10px;
+    padding: 10px 0 0 8px;
+}
+.calendar__block__active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-left: 8px solid #3DCD58;
+    background-color: rgba(61,205,88, .2);
+    color: #202020;
+    font-size: 10px;
+    padding: 20px 0 0 8px;
+}
+
+
+
+
+
+.wrapper-vebinar__page {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.vebinar__page__img {
+    width: 313px;
+    height: 184px;
+    background: #C4C4C4;
+}
+.vebinar__page__name {
+    width: 55%;
+}
+.vebinar__page__name > p {
+    font-size: 1.375em;
+    line-height: 30px;
+    color: #202020;
+}
+.vebinar__page__name article {
+    font-size: 10px;
+    text-transform: uppercase; 
+    color: #626469;
+    height: 110px;
+}
+.wrapper-vebinar__date {
+    display: flex;
+}
+.vebinar__date__block {
+    display: flex;
+}
+.vebinar__date__block p {
+    margin-left: 7px;
+    font-size: .75em;
+    line-height: 16px;
+    color: #626469;
+}
+.vebinar__date__block:last-child {
+    margin-left: 25px;
+}
+.subtitle__vebinar {
+    margin-top: 25px;
+}
+.subtitle__vebinar article {
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 24px;
+    color: #626469;
+}
+.subtitle__vebinar p {
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 24px;
+    color: #626469;
+}
+.btn-vebinar {
+    margin-top: 35px;
+}
+
+.calendarToday{
+    border: 2px solid #3DCD58;
+    border-right: 2px solid #3DCD58 !important;
+}
+.modal-vebinar {
+
+    position: fixed;
+    padding: 22px;
+    top: 250px;
+    left: 50%;
+    margin-left: -184px;
+    width: 368px;
+    height: 200px;
+    cursor: default;
+    background-color: #FFFFFF;
+    border: 1px solid #9FA0A4; 
+    text-align: center;
+}
+.modal-vebinar article {
+    line-height: 24px;   
+    color: #626469;
+}
+.modal-vebinar > p {
+    margin-top: 15px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #202020;
+}
+.btn-vebinar__ok {
+    margin: 15px auto 0;
+}
+
+.modal-vebinar__banner {
+    display: none;
+    position: absolute;
+    width: 304px;
+    height: 144px;
+    border: 1px solid #C4C4C4;
+    border-left: 8px solid #3DCD58; 
+    background-color: #fff;
+    z-index: 97;
+    padding: 15px;
+    left: 100px;
+}
+.modal-vebinar__banner h6 {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    text-transform: uppercase;
+    color: #626469;
+}
+.modal-vebinar__banner h5 {
+    margin-top: 12px;
+    margin-bottom: 30px;
+    line-height: 24px;
+    color: #626469;
+}
+.show-modal:hover ~ .modal-vebinar__banner {
+    display: block;
+}

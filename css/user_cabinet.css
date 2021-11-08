@@ -1,0 +1,490 @@
+.progres-bars {
+    margin-top: 30px;
+    max-width: 650px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.progres-around {
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+.progres-around svg {
+    position: absolute;
+}
+.progres-around p {
+    margin-top: 55px;
+    text-align: center;
+    font-size: .75em;
+    color: #9FA0A4;
+}
+.progres-around p strong {
+    line-height: 24px;
+    font-size: 1.33em;
+    text-align: center;
+    color: #626469;
+}
+.progres-around dt {
+    margin-top: 60px;
+    font-size: .75em;
+    line-height: 16px;
+    text-align: center;
+    color: #626469;
+}
+.progres-days {
+    position: relative;
+    display: flex;
+    padding-top: 125px;
+}
+.progres-days__mounht {
+    width: 24px;
+    height: 4px;
+    border-left: 1px solid #9FA0A4;
+    border-bottom: 1px solid #9FA0A4;
+}
+.progres-days__mounht:last-child {
+    border-right: 1px solid #9FA0A4; 
+}
+.progres-days__line {
+    position: absolute;
+    width: 8px;
+    height: 3px;
+    margin-top: -0px;
+    margin-left: 8px;
+    background-color: #C4C4C4;
+}
+.progres-days__line1 {
+    height: 10px;
+    margin-top: -7px;
+    background-color: #3DCD58;
+}
+.progres-days__line2 {
+    height: 15px;
+    margin-top: -12px;
+    background-color: #3DCD58;
+}
+.progres-days__line3 {
+    height: 15px;
+    margin-top: -12px;
+    background-color: #3DCD58;
+}
+.progres-days__line4 {
+    height: 15px;
+    margin-top: -12px;
+    background-color: #3DCD58;
+}
+.progres-days__line5 {
+    height: 20px;
+    margin-top: -17px;
+    background-color: #3DCD58;
+}
+.progres-days__line6 {
+    height: 30px;
+    margin-top: -27px;
+    background-color: #3DCD58;
+}
+.progres-days__line7 {
+    height: 45px;
+    margin-top: -42px;
+    background-color: #3DCD58;
+}
+.progres-days__line8 {
+    height: 60px;
+    margin-top: -57px;
+    background-color: #3DCD58;
+}
+.progres-days__line9 {
+    height: 30px;
+    margin-top: -27px;
+    background-color: #3DCD58;
+}
+.progres-days__line10 {
+    height: 70px;
+    margin-top: -67px;
+    background-color: #3DCD58;
+}
+.progres-days__line11 {
+    height: 100px;
+    margin-top: -97px;
+    background-color: #3DCD58;
+}
+.progres-days__line12 {
+    height: 80px;
+    margin-top: -77px;
+    background-color: #3DCD58;
+}
+.progres-days__mounht p {
+    padding-top: 4px;
+    font-size: .625em;
+    text-align: center;
+    color: #9FA0A4;
+}
+.progres-days dt {
+    margin-top: 30px;
+    padding-left: 10px;
+    position: absolute;
+    font-size: .75em;
+    line-height: 16px;
+    text-align: center;
+    color: #626469;
+}
+
+
+.wrapper-select__nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+}
+.wrapper-select__nav .select_container{
+    margin-right: 26px;
+
+}
+.wrapper-select__nav select {
+    font-size: .937em;
+    color: #626469;
+    height: 30px;
+    border: 1px solid #626469;
+    margin-right: 16px;
+    padding: 0px 5px;
+
+}
+.wrapper-select__nav select option{
+    padding: 15px;
+}
+.wrapper-select__nav select option:first-child {
+    font-weight: bold;
+    color: #626469;
+    border-top: none;
+    width: 100%;
+}
+
+.select:first-child{
+ width: 220px;
+}
+.select:nth-child(2){
+ width: 220px;
+}
+.select:nth-child(3){
+ width: 150px;
+}
+.select:nth-child(4){
+ width: 161px;
+}
+
+
+
+
+
+.section__block {
+    margin-top: 66px;
+}
+.wrapper-training__blockMT{
+    margin-top: 22px !important;
+}
+.wrapper-training__block {
+    margin: 11px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-prof-block,.btn-exp-session,.btn-prof-coffee {
+    margin-top: 26px;
+}
+.training__block-null {
+
+    padding-top: 11px;
+    line-height: 24px;  
+    color: #9FA0A4;
+}
+.training__block-null.active {
+    display: block;
+}
+
+.btn__myTeam{
+    margin-bottom:  80px;
+}
+
+.select {
+    display: block;
+    position: relative;
+    height: 31px;
+
+}
+
+.new-select {
+    position: relative;
+    border: 1px solid #626469;
+    padding: 5px 10px;
+    padding-right: 35px;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+    max-height: 31px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.new-select.on,.new-select__list{
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.15);
+}
+.new-select__list {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    border: 1px solid #626469;
+    border-top: none;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    background: #fff;
+    user-select: none;
+}
+
+.new-select__list.on {
+    display: block;
+    
+}
+
+.new-select__item span {
+    display: block;
+    padding: 10px 10px;
+   overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+
+}
+
+
+.new-select__item span:hover {
+    color: #12b223;
+}
+
+.new-select:after {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 12px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: url('../img/arrdown.png') no-repeat right center;
+
+    -webkit-transition: all .27s ease-in-out;
+        -o-transition: all .27s ease-in-out;
+            transition: all .27s ease-in-out;
+
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+.new-select.on:after {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+.select_container{
+    position: relative;
+    width: 140px;
+    height: 28px;
+}
+
+
+
+.new_select{
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    max-width:100%;
+    max-height: 30px;
+    padding-top: 2px;
+    border: 1px solid #626469;
+    box-sizing: border-box;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    background-color: white;
+    color: #626469;
+    z-index: 100;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+.new_select1{
+    width: 161px;
+
+}
+.new_select2{
+    width: 108px;
+
+}
+.new_select3{
+width: 160px;
+
+}
+.new_select4{
+width: 158px;
+
+}
+.new_select5{
+width: 158px;
+
+}
+.new_select6{
+width: 158px;
+
+}
+
+
+.new_select.on{
+    width: auto !important;
+    min-width: 100%;
+    min-height: auto!important;
+
+    color: #626469!important; 
+    background-color: white!important;
+
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.15);
+}
+
+
+.new_select p{
+    height: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+
+
+    cursor: pointer;
+}
+
+
+.new_select.on .title_select{
+    font-weight: bold;
+
+}
+
+.sertificat__filter{
+    display: flex;  
+    align-items: center;
+    cursor:     pointer;
+}
+.sertificat__filter__nav{
+    justify-content: space-between; 
+    flex-direction:     row;
+}
+.sertificat__filter__text{
+        color: #9faba4;
+        font-size: 15px;
+        margin-right:   8px;
+}
+.sertificat__filter__i{
+        font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+margin-right:   8px;
+color: #626469;
+}
+.sertificat__filter__img{
+        width:  8px;
+        height:     8px;
+        margin-top:     2px;
+    }
+.title_select{
+    text-overflow: ellipsis;
+    padding-top: 2px;
+    overflow: hidden;
+    padding-right: 25px!important;
+}
+
+
+.new_select .body_select p{
+    height: 28px;
+    overflow: hidden;
+    
+    font-size: 14px;
+}
+.select_container {
+    cursor: pointer;
+}
+.new_select.on:after {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: transform .27s ease-in-out!important;
+        -o-transition: transform .27s ease-in-out!important;
+            transition: transform .27s ease-in-out!important;
+    background: url('../img/arrdown.png') no-repeat right center!important;
+}
+
+.new_select:after {
+    padding-top: 15px;
+    content: '';
+    display: block;
+    width: 14px;
+    height: 12px;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    cursor: pointer;
+    background: url('../img/arrdown.png') no-repeat right center;
+
+    -webkit-transition: transform .27s 0s ease-in-out;
+        -o-transition: transform .27s 0s ease-in-out;
+            transition: transform .27s 0s ease-in-out;
+
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+.new_select.selected:after{
+    background: url('../img/downArrWhite.png') no-repeat right center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper-select__navFeedback{
+    margin-top: 26px ;
+
+}
+
+.selectFeedback .new-select{
+    border: 1px solid #c4c4c4;
+}
+.body_select>p:hover {
+    color: black;
+}

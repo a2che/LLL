@@ -1,0 +1,159 @@
+.wrapper__login {
+    display: flex;
+    margin-top: 20px;
+    padding: 0px 40px;
+    margin-bottom: 72px;
+}
+.btn-user__foto {
+ width: 192px;
+ height: 216px;
+ position: relative;
+}
+.btn-user__foto:hover .bg-fon{
+    display: block;
+}
+
+.btn-user__foto:hover .user__foto__text{
+    display: block;
+}
+
+.user__foto__text{
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    border: 2px solid white;
+    padding: 8px 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    z-index: 51;
+}
+
+.bg-fon {
+    display: none;
+    background-color:rgba(0,0,0,.1);
+    height:100%;
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:41;
+}
+
+
+.wrapper__login__name {
+    margin-left: 48px;
+
+}
+.wrapper__login__input {
+    display: flex;
+    margin-top: 12px;
+
+}
+.wrapper__login__input p {
+    width: 120px;
+    color: #626469;
+    line-height: 24px;
+    margin-right:   46px;
+}
+.wrapper__login__input input,.wrapper__login__input select {
+    width: 100%;
+    line-height: 24px;
+    border-bottom: 1px solid #C4C4C4;
+    font-size: 1em;
+}
+.wrapper__login__input input::placeholder {
+    color: #C4C4C4;
+}
+
+.btn-black {
+    margin-top: 60px;
+    width: max-content;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 16px;
+    color: #fff;
+    font-size: .75em;
+    background-color: #c4c4c4;
+    cursor: pointer;
+}
+.btn-black:hover {
+    background-color: #7A7C81;
+}
+.btn-black:active {
+    background-color: #53555B;
+}
+
+.btn-login {
+    margin-top: 40px;
+}
+
+
+
+.demo {
+    height: 200px;
+}
+
+
+
+
+
+
+
+.subsctiption__flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscription__container{
+    margin-left: 280px;
+}
+.subscription__title{
+    font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 30px;
+color: #202020;
+margin-bottom: 24px;
+}
+.saveChangeBtn{
+    margin-top: 60px;
+    width: max-content;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 16px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #c4c4c4;
+    cursor: pointer;
+}
+.subsctiption__info{
+font-style: normal;
+
+font-size: 16px;
+
+color: #626469;
+margin-bottom: 42px;
+}
+.subscription__time{
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+
+margin-bottom: 38px;
+color: #626469;
+}
+.btnRenew{
+    
+}
+.
+.
+.
+.
+.
